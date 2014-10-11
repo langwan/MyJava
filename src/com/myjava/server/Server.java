@@ -10,7 +10,7 @@ public class Server implements Runnable {
 	@Override
 	public void run() {
 		
-		System.out.println(options.serverName);
+		System.out.println("serverName is " + options.serverName);
 		
 		while(true) {
 			try {

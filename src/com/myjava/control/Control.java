@@ -20,8 +20,8 @@ public class Control implements Runnable {
 		Socket socket = null;
 		try {
 			ServerSocket server = new ServerSocket(port);
+			System.out.println("Telnet listen port " + port);
 			while(true) {
-				System.out.println("ServerSocket accept\n");
 				socket = server.accept();
 				Thread t = new Thread(new ControlTask(socket));
 				t.start();

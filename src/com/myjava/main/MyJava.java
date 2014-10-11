@@ -12,6 +12,8 @@ public class MyJava {
 	
 	public MyJava(String[] args) {
 		new Command().parseOption(args);
+		Config.init(Command.options.configPath);
+		System.out.println("ENV_NAME is " + Config.getInstance().envName);
 	}
 
 	public static void main(String[] args) {
@@ -26,6 +28,9 @@ public class MyJava {
 		
 		Thread t = new Thread(new Control(Command.options.controlPort));
 		t.start();
+		
+		
+		
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
