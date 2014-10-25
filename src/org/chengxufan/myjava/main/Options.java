@@ -1,7 +1,7 @@
-package com.myjava.main;
+package org.chengxufan.myjava.main;
 
 public class Options {
 	public String serverName = "myjava server";
-	public String configPath = "bin/config/myjava.properties";
+	public String configPath = "config/myjava.properties";
 	public int controlPort = 5002;
 }

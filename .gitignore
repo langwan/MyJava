@@ -1,3 +1,4 @@
+#java for eclipse 
 *.pydevproject
 .metadata
 .gradle
@@ -28,3 +29,15 @@ local.properties
  
 # TeXlipse plugin
 .texlipse
+
+#maven
+
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+#self
+log/

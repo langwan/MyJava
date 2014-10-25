@@ -1,4 +1,4 @@
-package com.myjava.main;
+package org.chengxufan.myjava.main;
 
 import java.util.Arrays;
 import java.util.Iterator;
@@ -14,10 +14,11 @@ public class Command {
 			String opt = it.next();
 			if (opt.equals("-server")) {
 				options.serverName = it.next();
-			} else if(opt.equals("-config")) {
+			} else if (opt.equals("-config")) {
 				options.configPath = it.next();
-			} else if(opt.equals("-controlPort")) {
-				options.controlPort = Integer.parseInt(it.next());
+			} else if (opt.equals("-controlPort")) {
+				options.controlPort = Integer.parseInt(it
+						.next());
 			}
 		}
 		return true;
